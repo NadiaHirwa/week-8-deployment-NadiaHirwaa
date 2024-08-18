@@ -1,0 +1,27 @@
+version: '3.8'
+
+services:
+  backend:
+    build: ./backend
+    container_name: expense-tracker-backend
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+      - DATABASE_URL=your_database_url_here
+    volumes:
+      - ./backend:/usr/src/app
+    networks:
+      - expense-tracker-network
+
+  frontend:
+    build: ./frontend
+    container_name: expense-tracker-frontend
+    ports:
+      - "5000:5000"
+    networks:
+      - expense-tracker-network
+
+networks:
+  expense-tracker-network:
+    driver: bridge
