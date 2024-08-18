@@ -1,0 +1,1043 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <section class="navbar-section">
+        <div class="logo">
+            <a href=""><i class="fas fa-wallet"></i> Expense</a>
+        </div>
+        <div class="burger-menu" id="burgerMenu">
+            <i class="fas fa-bars"></i>
+        </div>
+        <div class="nav-items" id="navItems">
+            <ul>
+                <li>
+                    <a href="pages/login.html"><i class="fas fa-sign-in-alt"></i> Login</a>
+                </li>
+                <li>
+                    <a href="pages/register.html"><i class="fas fa-sign-in-alt"></i> Register</a>
+                </li>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="hero-section">
+        <div class="hero-container">
+            <header>
+                <h1>Expense Tracker</h1>
+            </header>
+            <h1>Welcome to the Expense Tracker. </h1>
+            <h2>Effortlessly manage your finances and take control of your expenses."</h2>
+            <p>Stop wondering where your money goes. Track it effortlessly with our expense tracker.</p>
+            <a href="pages/register.html">Sign Up for Free</a>
+        </div>
+        <div class="hero-img">
+            <img src="images/welcome.webp" alt="Expense Tracker Interface">
+        </div>
+    </section>
+    <section id="about" class="about-section">
+        <div class="about-left">
+            <img src="images/about.png" alt="">
+        </div>
+
+        <div class="about-desc">
+            <h2>About Expense Tracker</h2>
+            <h3>This expense tracker application is dedicated in helping you manage your financial life.</h3>
+            <p>
+                At Expense Tracker, we believe that financial management should be simple, accessible, and stress-free. Our mission is to empower individuals to take control of their personal finances by providing a user-friendly platform that helps track expenses, manage budgets, and make informed financial decisions. Whether you're saving for a big goal or simply trying to stay on top of your daily spending, our app is designed to give you the tools you need to succeed. We’re committed to delivering a seamless experience that adapts to your lifestyle, making financial wellness achievable for everyone.
+            </p>
+            <div class="about-feature">
+                <h1>Features of Expense Tracker</h1>
+                <div class="feature-row">
+                    <div class="about-icon">
+                        <div class="round-icon">
+                            <i class="fas fa-check"></i>
+                        </div>
+                        <h3>Real-Time Expense Tracking</h3>
+                    </div>
+                    <div class="about-icon">
+                        <div class="round-icon">
+                            <i class="fas fa-check"></i>
+                        </div>
+                        <h3>Customizable Budgets</h3>
+                    </div>
+                </div>
+                <div class="feature-row">
+                    <div class="about-icon">
+                        <div class="round-icon">
+                            <i class="fas fa-check"></i>
+                        </div>
+                        <h3>Detailed Reports & Analytics</h3>
+                    </div>
+                    <div class="about-icon">
+                        <div class="round-icon">
+                            <i class="fas fa-check"></i>
+                        </div>
+                        <h3>Secure User Authentication</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="login-section">
+        <div class="contact-section">
+            <div class="login-image">
+                <img src="images/contact.jpg" alt="">
+            </div>
+
+            <div class="login-container">
+                <h2>Contact Us</h2>
+                <div class="cont-row">
+                    <form action="" method="post" enctype="multipart/form-data">
+                        <div class="form-group">
+                            <input placeholder="Enter Your Name" type="text" name="user_code">
+                        </div>
+                        <div class="form-group">
+                            <input placeholder="Enter a Valid Email" type="email" name="user_password" id="passwordField3">
+                        </div>
+                        <div class="form-group">
+                            <textarea name="" rows="10" cols="43" id="">Your Message</textarea>
+                        </div>
+                        <input type="submit" name="loginUser" class="btn-register" value="Send Message">
+                    </form>
+
+                    <div class="contact-cat">
+                        
+                        <div class="contact-bx">
+                            <i class="fas fa-phone"></i>
+                            <h4>Phone Number</h4>
+                            <h4>+250-781-186-230</h4>
+                        </div>
+                        <div class="contact-bx">
+                            <i class="fas fa-envelope"></i>
+                            <h4>Email</h4>
+                            <h4>irahirnad22@gmail.com</h4>  
+                        </div>
+                        <div class="contact-bx">
+                            <i class="fas fa-map-marker"></i>
+                            <h4>Head Quarter</h4>
+                            <h4>Kigali, Rwanda</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="footer-section">
+        <footer class="footer-cont">
+            <div class="footer-abt">
+                <h2>About Us</h2>
+                <p>The Expense Tracker is designed to help you manage your finances with ease. Our intuitive interface allows you to quickly add, edit, and view your expenses, providing you with a clear overview of where your money is going.</p>
+            </div>
+            
+            <div class="socials">
+                <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+            </div>
+        </footer>
+        <div class="foot">
+            <p>&COPY; 2024 Expense Tracker | All Rights Reserved by Nadia Hirwa</p>
+        </div>
+    </section>
+    <!-- Modals -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close"><i class="fas fa-close"></i></span>
+            <!-- <h2>Login</h2> -->
+            <iframe src="login.html" frameborder="0" style="width: 100%; height: 100vh;"></iframe>
+        </div>
+    </div>
+    <div id="registerModal" class="modal">
+        <div class="modal-content">
+            <span class="close"><i class="fas fa-close"></i></span>
+            <!-- <h2>Login</h2> -->
+            <iframe src="register.html" frameborder="0" style="width: 100%; height: 100vh;"></iframe>
+        </div>
+    </div>
+    <div id="addExpenseModal" class="modal">
+        <div class="modal-content">
+            <span class="close"><i class="fas fa-close"></i></span>
+            <!-- <h2>Add Expense</h2> -->
+            <!-- Add expense form content -->
+            <iframe src="add_expense.html" frameborder="0" style="width: 100%; height: 100vh;"></iframe>
+        </div>
+    </div>
+    <div id="viewExpenseModal" class="modal">
+        <div class="modal-content">
+            <span class="close"><i class="fas fa-close"></i></span>
+            <!-- <h2>View Expense</h2> -->
+            <!-- View expense content -->
+            <iframe src="view_expense.html" frameborder="0" style="width: 100%; height: 100vh;"></iframe>
+        </div>
+    </div>
+    <div id="editExpenseModal" class="modal">
+        <div class="modal-content">
+            <span class="close"><i class="fas fa-close"></i></span>
+            <!-- <h2>Edit Expense</h2> -->
+            <!-- Edit expense form content -->
+
+            <iframe src="edit_expense.html" frameborder="0" style="width: 100%; height: 100vh;"></iframe>
+        </div>
+    </div>
+    <div id="dashboardModal" class="modal">
+        <div class="modal-content">
+            <span class="close"><i class="fas fa-close"></i></span>
+            <!-- <h2>Edit Expense</h2> -->
+            <!-- Edit expense form content -->
+
+            <iframe src="dashboard.html" frameborder="0" style="width: 100%; height: 100vh;"></iframe>
+        </div>
+    </div>
+    <script>
+        document.getElementById('burgerMenu').addEventListener('click', function() {
+            var navItems = document.getElementById('navItems');
+            var burgerIcon = document.querySelector('.burger-menu i');
+            navItems.classList.toggle('active');
+            burgerIcon.classList.toggle('fa-bars');
+            burgerIcon.classList.toggle('fa-times');
+        });
+    </script>
+    <script>
+        // Get all modal links
+        var modalLinks = document.querySelectorAll('.modal-link');
+
+        // Iterate through each modal link
+        modalLinks.forEach(function(link) {
+            link.onclick = function(event) {
+                event.preventDefault();
+                var modalId = link.getAttribute('href');
+                var modal = document.querySelector(modalId);
+                modal.style.display = "block ";
+            }
+        });
+
+        // Get all the close buttons
+        var closeButtons = document.querySelectorAll('.close');
+
+        // Iterate through each close button
+        closeButtons.forEach(function(button) {
+            button.onclick = function() {
+                var modal = button.closest('.modal');
+                modal.style.display = "none ";
+            }
+        });
+
+        // Close the modal when the user clicks outside of it
+        window.onclick = function(event) {
+            if (event.target.classList.contains('modal')) {
+                event.target.style.display = "none ";
+            }
+        }
+    </script>
+</body>
+<style>
+    body {
+        background-color: rgb(253, 253, 251);
+    }
+    form {
+        margin: 20px 0;
+    }
+    
+    ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    
+    li {
+        background-color: #fff;
+        margin-bottom: 10px;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+    }
+    li a:hover {
+        background-color: #f2f2f2;
+        
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+    }
+    
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+        list-style-type: none;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    
+    html {
+        scroll-behavior: smooth;
+    }
+    
+ 
+    
+    p {
+        line-height: 30px;
+    }
+    
+    .navbar-section {
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        background-color: rgb(85, 112, 89);
+        justify-content: space-around;
+        align-items: center;
+        height: 70px;
+        color: #333333;
+        position: fixed;
+        /* border: 1px solid red; */
+    }
+    
+    .navbar-section a {
+        color: #000;
+   
+    }
+    .navbar-section .logo a {
+        color: #fff;
+        font-size: 1.8rem;
+    }
+    
+    .nav-items ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 3rem;
+        align-items: center;
+    }
+    
+    .nav-items ul li a {
+        color: #000;
+    }
+    
+    .hero-section {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        gap: 5rem;
+        width: 100%;
+        padding: 100px 0;
+        /* border: 1px solid red; */
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+ 
+    }
+    
+    .hero-container {
+        text-align: center;
+        padding: 2rem;
+        width: 100%;
+        
+    }
+    
+    .hero-container h1 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+    
+    .hero-container p {
+        font-size: 1.2rem;
+        color: #333;
+        margin-bottom: 2rem;
+        
+    
+    }
+    .hero-container a{
+        color: rgb(231, 224, 224);
+        font-weight: bold;       
+        border-radius: 5px;
+        padding: 15px;
+        background: #000;     
+    }
+    .hero-container a:hover{
+        background-color: #333; 
+    }
+    .btn {
+        background-color: #333;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+    .hero-img {
+        width: 100%;
+    }
+    
+    .hero-img img {
+        width: 500px;
+        border-radius: 4px;
+    }
+    
+    .about-section {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+        gap: 4rem;
+        /* border: 1px solid red; */
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    }
+    
+    .about-left {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding-left: 5rem;
+        /* border: 1px solid aqua; */
+    }
+    
+    .about-left img {
+        width: 500px;
+        height: 400px;
+        object-fit: cover;
+        border-radius: 4px;
+    }
+    
+    .about-desc {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding-right: 4rem;
+        gap: 1rem;
+        /* border: 1px solid yellow; */
+    }
+    
+    .about-feature {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+    
+    .feature-row {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 100%;
+    }
+    
+    .about-icon {
+        display: flex;
+        flex-direction: row;
+        gap: .5rem;
+        align-items: center;
+        justify-content: flex-start;
+        text-align: center;
+        width: 100%;
+    }
+    
+    .round-icon {
+        border-radius: 50%;
+        padding: 8px;
+        border: 1px solid black;
+        background-color: #333333;
+        color: white;
+    }
+    
+    .login {
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .login-btn {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: .5rem;
+        font-size: 20px;
+    }
+    
+    .login-section {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-top: 1rem;
+        flex-wrap: wrap;
+        /* height: 70vh; */
+        /* border: 1px solid red; */
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    }
+    
+    .contact-section {
+        display: flex;
+        flex-direction: row;
+        padding: 40px 0;
+    }
+    
+    .login-image {
+        display: flex;
+        object-fit: contain;
+        height: fit-content;
+        width: fit-content;
+        /* border: 1px solid red; */
+    }
+    
+    .login-image img {
+        width: 400px;
+        height: 66ch;
+        border-radius: 4px;
+        object-fit: cover;
+        /* border: 1px solid red; */
+    }
+    
+    login-image2 {
+        display: flex;
+        object-fit: contain;
+    }
+    
+    .login-image2 img {
+        height: 66ch;
+        border-radius: 4px;
+    }
+    
+    .login-image3 {
+        display: flex;
+        object-fit: contain;
+        /* border: 1px solid red; */
+        border-radius: 8px;
+    }
+    
+    .login-image3 img {
+        height: 92vh;
+        width: 400px;
+        border-top-right-radius: 4px;
+        border-bottom-right-radius: 4px;
+    }
+    
+    .login-container {
+        /* max-width: 400px; */
+        background-color: #fff;
+        border-radius: 8px;
+        padding: 40px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        /* border: 1px solid red; */
+        height: 66ch;
+    }
+    
+    .cont-row {
+        display: flex;
+        flex-direction: row;
+        gap: 4rem;
+    }
+    
+    .contact-cat {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        justify-content: center;
+    }
+    
+    .contact-bx {
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+        padding: 15px;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    }
+    
+    .contact-bx i {
+        font-size: 20px;
+    }
+    
+    .login-container1 {
+        /* max-width: 400px; */
+        background-color: #fff;
+        border-radius: 8px;
+        padding: 40px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        /* border: 1px solid red; */
+        /* height: 66ch; */
+    }
+    
+    .login-container h2,
+    .login-container1 h2 {
+        text-align: center;
+        margin-bottom: 30px;
+        /* color: #007bff; */
+        color: #333333;
+    }
+    
+    .input-row {
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+        /* border: 1px solid red; */
+    }
+    
+    .gap {
+        display: flex;
+        flex-direction: row;
+        gap: 4rem;
+    }
+    
+    .gap a {
+        margin-left: 2rem;
+    }
+    
+    .form-group {
+        margin-bottom: 20px;
+    }
+    
+    .form-group label {
+        font-size: 16px;
+        color: #333;
+        margin-bottom: 5px;
+        display: block;
+    }
+    
+    .title {
+        text-align: center;
+    }
+    
+    .form-group svg {
+        margin-left: 4rem;
+    }
+    
+    .input-icon {
+        position: relative;
+    }
+    
+    .input-icon input {
+        padding-left: 30px;
+    }
+    
+    .input-icon svg {
+        position: absolute;
+        right: 10px;
+        cursor: pointer;
+        top: 50%;
+        transform: translateY(-50%);
+        /* pointer-events: none; */
+    }
+    
+    .form-group input {
+        width: 300px;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        transition: border-color 0.3s ease;
+        /* border: 1px solid red; */
+    }
+    
+    .form-group input[type="checkbox"] {
+        margin-right: 5px;
+    }
+    
+    .form-group input[type='submit'] {
+        background-color: #224d7c;
+        width: 320px;
+        cursor: pointer;
+    }
+    
+    .dash-row {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .rows {
+        display: flex;
+        flex-direction: row;
+        text-align: left;
+        width: 130px;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .rows>label {
+        /* width: 200px; */
+        text-wrap: nowrap;
+    }
+    
+    .form-group select {
+        width: 300px;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        transition: border-color 0.3s ease;
+    }
+    
+    .form-group-row {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        margin-bottom: 20px;
+    }
+    
+    .form-group input:focus {
+        border-color: #333333;
+        outline: none;
+    }
+    
+    .form-group input[type="checkbox"] {
+        display: inline-block;
+        margin-right: 5px;
+    }
+    
+    .form-group textarea {
+        resize: none;
+        padding: 7px 0 0 7px;
+    }
+    
+    .form-group img {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .action-btn a {
+        padding-right: 3rem;
+    }
+    
+    .btn-login,
+    .btn-register {
+        width: 100%;
+        padding: 10px;
+        /* background-color: #224d7c; */
+        background-color: #000;
+        /* color: #857474; */
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    
+    .btn-login:hover,
+    .btn-register:hover {
+        background-color: #444444;
+    }
+    
+    .signup-link,
+    .login-link {
+        text-align: center;
+        margin-top: 20px;
+    }
+    
+    .signup-link a,
+    .login-link a {
+        color: #007bff;
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 0.3s ease;
+    }
+    
+    .signup-link a:hover,
+    .login-link a:hover {
+        color: #0056b3;
+    }
+    
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.4);
+        /* padding-top: 60px; */
+    }
+    
+    .modal-content {
+        background-color: #fefefe;
+        margin: 5% auto;
+        padding: 20px;
+        /* border: 1px solid #888; */
+        width: 70%;
+        /* max-width: fit-content; */
+        border-radius: 6px;
+    }
+    
+    .close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
+    
+    .close:hover,
+    .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    
+    .table-container {
+        background-color: #fff;
+        padding: 2rem;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        max-width: 800px;
+    }
+    
+    .table-container h1 {
+        text-align: center;
+        margin-bottom: 1.5rem;
+        font-size: 2rem;
+    }
+    
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    
+    th,
+    td {
+        padding: 1rem;
+        border: 1px solid #ddd;
+        text-align: left;
+    }
+    
+    th {
+        background-color: #444444;
+        color: #fff;
+    }
+    
+    tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+    
+    .actions {
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .actions a {
+        color: #444444;
+        text-decoration: none;
+        padding: 0.5rem;
+        border-radius: 4px;
+        transition: background-color 0.3s;
+    }
+    
+    .actions a:hover {
+        background-color: #ddd;
+    }
+    
+    .footer-section {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 2rem;
+        background-color: rgb(214, 216, 214);
+        color: #000;
+        padding: 40px 0;
+    }
+    
+    .footer-cont {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+        /* border: 1px solid red; */
+    }
+    
+    .footer-abt p {
+        max-width: 60ch;
+    }
+    
+    .foot-links {
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .foot-links ul {
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+    }
+    
+    .foot-links a {
+        color: #333333;
+    }
+    
+    .socials {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+    }
+    
+    .socials i {
+        color: #333333;
+    }
+    
+    .foot {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .burger-menu {
+        display: none;
+        font-size: 1.5em;
+        cursor: pointer;
+    }
+    
+    @media screen and (max-width: 768px) {
+        .navbar-section {
+            padding-left: 2rem;
+            justify-content: space-between;
+            background-color: rgb(228, 226, 226);
+        }
+        .nav-items ul {
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .nav-items.active ul {
+            display: flex;
+            background-color: rgb(228, 226, 226);
+            flex-direction: column;
+            position: absolute;
+            align-items: flex-start;
+            justify-content: flex-start;
+            padding: 1rem 0 1rem 1rem;
+            color: #333;
+            width: 100%;
+            left: 0;
+            height: fit-content;
+            top: 70px;
+        }
+        .burger-menu {
+            display: block;
+            right: 0;
+        }
+        .hero-section {
+            flex-direction: column;
+        }
+        .about-section {
+            flex-direction: column-reverse;
+        }
+        .about-desc {
+            align-items: center;
+            justify-content: center;
+        }
+        .about-desc h3 {
+            padding: 0 10px;
+        }
+        .about-desc p {
+            padding: 0 10px;
+            width: 100%;
+        }
+        .hero-img img {
+            width: 100%;
+        }
+        .about-left {
+            padding-left: 0;
+            width: 100%;
+        }
+        .about-left img {
+            width: 100%;
+        }
+        .login-container {
+            height: fit-content;
+        }
+        .login-image {
+            display: none;
+        }
+        .cont-row {
+            flex-direction: column;
+            gap: 7rem;
+        }
+        .footer-section {
+            align-items: center;
+            justify-content: center;
+        }
+        .footer-cont {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+        }
+        .footer-abt {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 0 10px;
+        }
+        .footer-abt p {
+            text-align: center;
+        }
+        .modal-content {
+            width: 100%;
+        }
+        .input-row {
+            flex-direction: column;
+        }
+    }
+    
+    @media screen and (max-width: 1024px) {
+        .hero-section {
+            flex-direction: column;
+        }
+        .hero-img {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .about-section {
+            flex-direction: column-reverse;
+        }
+        .about-section {
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            gap: 2rem;
+        }
+        .contact-section {
+            margin-bottom: 10rem;
+        }
+        .cont-row {
+            flex-direction: column;
+            gap: 7rem;
+        }
+        .contact-cat {
+            flex-direction: row;
+            width: 100%;
+        }
+        .contact-cat i {
+            font-size: 10px;
+        }
+        .contact-cat h4 {
+            font-size: 12px;
+        }
+        .contact-bx {
+            padding: 10px;
+            width: fit-content;
+        }
+    }
+</style>
+</html>
